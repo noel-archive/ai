@@ -1,4 +1,4 @@
-# 🍋 愛 (ai)
+# 🪁 愛 (ai)
 > *Simple CLI parser for Kotlin that won't make your head spin. 。.:☆*:･'(*⌒―⌒*)))*
 >
 > [:scroll: **Documentation**](https://ai.noelware.org)
@@ -21,30 +21,52 @@ object SomeCommand: CliktCommand(name = "name") {
 }
 ```
 
-With **ai**, the `run` body is only called if the command's context is referring to `name`, not with the parent of the command:
+With **ai**, you can create a robust CLI while arguments and flags are parsed by [Apache Commons CLI](https://github.com/apache/commons-cli). To build a simple CLI, you can use `AiCommand`:
 
-```kt
-object SomeCommand: AiCOmmand(
-  "name', "owo", "uwu",
-  help = "This is a command!"
+```kotlin
+import org.noelware.ai.AiCommand
+import org.noelware.ai.options.*
+import org.noelware.ai.AiContext
+
+object SomeCurrentContext: AiContext
+
+object MyCLI: AiCommand(
+  help = """
+  |`my-cli` is a CLI utility to build robust utilities.
+  |
+  |To run `my-cli`, you will need to provide a configuration file, with the [-c], [--config], or [--config.file] option(s).
+  """.trimMargin(),
+  
+  usage = "./dist/ai.jar [-c|--config]=./path/to/file"
 ) {
-  private val user by argument(
-    "user",
-    help = "The user's name to register.",
-    envVar = "SOME_APP_USERNAME"
-  )
+  private val configFile: File by file('c', "config", description = "The configuration file to load up.") {
+    validator<String>() // uses `org.noelware.ai.validators.StringValidator`
+    valueSeperator('=') // Uses '=' to seperate this flag.
+    required()          // This argument will throw an exception if it was not provided.
+  }
   
-  // Enables the use of stdin, where the command is executed as:
-  // echo "username" | ./owo
-  //
-  // The `user` argument will be populated if `echo "username" | ./owo` was
-  // used, or the argument will be required.
-  private val useStdin by stdin(for = "user")
-  
-  override fun run(ctx: AiContext) {
-    println("user to register: $user (used stdin = $useStdin)")
+  init {
+    setContext(SomeCurrentContext)
+  }
+
+  override suspend fun execute(ctx: AiContext<SomeCurrentContext>) {
+    throw PrintUsageException()
   }
 }
+```
+
+Ruuning `./dist/ai.jar` will:
+
+```shell
+$ ./dist/ai.jar
+USAGE :: my-cli [-c|config] ./path/to/file
+
+`my-cli` is a CLI utility to build robust utilities.
+
+To run `my-cli`, you will you will need to provide a configuration file, with the -c, --config, or --config.file option(s).
+
+OPTIONS ::
+  -c, --config :: The configuration file to load up.
 ```
 
 ## Installation
