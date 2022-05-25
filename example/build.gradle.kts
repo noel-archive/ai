@@ -21,4 +21,21 @@
  * SOFTWARE.
  */
 
-package org.noelware.ai.options
+import dev.floofy.utils.gradle.by
+
+plugins {
+    kotlin("jvm") version "1.6.21"
+    id("application")
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(rootProject)
+}
+
+application {
+    mainClass by "org.noelware.ai.example.ExampleCliKt"
+}

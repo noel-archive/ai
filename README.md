@@ -21,52 +21,50 @@ object SomeCommand: CliktCommand(name = "name") {
 }
 ```
 
-With **ai**, you can create a robust CLI while arguments and flags are parsed by [Apache Commons CLI](https://github.com/apache/commons-cli). To build a simple CLI, you can use `AiCommand`:
+With **ai**, you can create a robust CLI while arguments and flags are parsed by [Apache Commons CLI](https://github.com/apache/commons-cli).
 
-```kotlin
-import org.noelware.ai.AiCommand
-import org.noelware.ai.options.*
-import org.noelware.ai.AiContext
+## Example
+You can run the example in the [example/](./example) folder.
 
-object SomeCurrentContext: AiContext
-
-object MyCLI: AiCommand(
-  help = """
-  |`my-cli` is a CLI utility to build robust utilities.
-  |
-  |To run `my-cli`, you will need to provide a configuration file, with the [-c], [--config], or [--config.file] option(s).
-  """.trimMargin(),
-  
-  usage = "./dist/ai.jar [-c|--config]=./path/to/file"
-) {
-  private val configFile: File by file('c', "config", description = "The configuration file to load up.") {
-    validator<String>() // uses `org.noelware.ai.validators.StringValidator`
-    valueSeperator('=') // Uses '=' to seperate this flag.
-    required()          // This argument will throw an exception if it was not provided.
-  }
-  
-  init {
-    setContext(SomeCurrentContext)
-  }
-
-  override suspend fun execute(ctx: AiContext<SomeCurrentContext>) {
-    throw PrintUsageException()
-  }
-}
+### No Arguments
+```shell
+$ ./gradlew :example:run
 ```
 
-Ruuning `./dist/ai.jar` will:
-
+#### Result
 ```shell
-$ ./dist/ai.jar
-USAGE :: my-cli [-c|config] ./path/to/file
+> Task :example:run
+hi :DDDDD (arg=:D)
 
-`my-cli` is a CLI utility to build robust utilities.
+BUILD SUCCESSFUL in xms
+5 actionable tasks: 1 executed, 4 up-to-date
+```
 
-To run `my-cli`, you will you will need to provide a configuration file, with the -c, --config, or --config.file option(s).
+### With `-a` argument
+```shell
+$ ./gradlew :example:run --args="-a=."
+```
+
+#### Result
+```shell
+> Task :example:run
+hi :DDDDD (arg=.)
+
+BUILD SUCCESSFUL in xms
+5 actionable tasks: 1 executed, 4 up-to-date
+```
+
+### With `h` subcommand
+```shell
+> Task :example:run FAILED
+USAGE :: example [COMMAND] [...ARGS]
+> This command doesn't have a help section.
+
+SUBCOMMANDS ::
+  * example h [...ARGS] - This command doesn't have a help section.
 
 OPTIONS ::
-  -c, --config :: The configuration file to load up.
+   -a, --aaaa <arg> heck!
 ```
 
 ## Installation

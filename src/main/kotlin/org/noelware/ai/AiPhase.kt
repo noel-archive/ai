@@ -21,5 +21,19 @@
  * SOFTWARE.
  */
 
-@file:JvmName("AiBuiltinOptionsKt")
-package org.noelware.ai.options
+package org.noelware.ai
+
+/**
+ * Represents the phase of a [command][AiCommand]'s execution.
+ */
+enum class AiPhase {
+    /**
+     * The command has finished.
+     */
+    FINISHED,
+
+    /**
+     * The command wants to print its usage.
+     */
+    PRINT_USAGE;
+}

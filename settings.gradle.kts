@@ -22,3 +22,5 @@
  */
 
 rootProject.name = "ai"
+
+include(":example")

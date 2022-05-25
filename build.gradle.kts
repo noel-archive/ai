@@ -61,7 +61,7 @@ val DOKKA_OUTPUT = "${rootProject.projectDir}/docs"
 val JAVA_VERSION = JavaVersion.VERSION_17
 
 group = "org.noelware.ai"
-version = "1.0-SNAPSHOT"
+version = "$VERSION"
 
 repositories {
     mavenCentral()
@@ -70,6 +70,13 @@ repositories {
 }
 
 dependencies {
+    // Kotlin libraries
+    implementation(kotlin("stdlib"))
+
+    // Parser (Apache Commons CLI)
+    implementation("commons-cli:commons-cli:1.5.0")
+
+    // Testing library :D
     testImplementation(kotlin("test"))
 }
 

@@ -22,3 +22,19 @@
  */
 
 package org.noelware.ai
+
+/**
+ * Represents the context of this [AiCommand].
+ */
+interface AiContext {
+    /**
+     * The current command this context is used by.
+     */
+    val command: AiCommand
+}
+
+/**
+ * Represents the default context that is used in this [AiCommand].
+ * @param command The current command this context is used by.
+ */
+class DefaultAiContext(override val command: AiCommand): AiContext
