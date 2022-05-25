@@ -121,10 +121,13 @@ tasks {
     }
 
     dokkaHtml {
+        dependsOn(clean)
+
         dokkaSourceSets {
-            configureEach {
-                platform by org.jetbrains.dokka.Platform.jvm
+            named("main") {
+                outputDirectory by file(DOKKA_OUTPUT)
                 jdkVersion by 17
+                platform by org.jetbrains.dokka.Platform.jvm
 
                 sourceLink {
                     remoteLineSuffix by "#L"

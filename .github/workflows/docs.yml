@@ -45,7 +45,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Generate documentation
-        run: chmod +x ./scripts/deploy-docs.sh && ./scripts/deploy-docs.sh
+        run: ./gradlew dokkaHtml --no-daemon
 
       - name: Check if git status is dirty
         id: git_status

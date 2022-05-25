@@ -1,0 +1,27 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:org.noelware.ai////PointingToDeclaration/ai/org.noelware.ai/index.html
+$dokka.location:org.noelware.ai//string/org.noelware.ai.AiCommand#kotlin.String/PointingToDeclaration/ai/org.noelware.ai/string.html
+$dokka.location:org.noelware.ai//stringOrNull/org.noelware.ai.AiCommand#kotlin.String/PointingToDeclaration/ai/org.noelware.ai/string-or-null.html
+$dokka.location:org.noelware.ai/AiCommand.Companion///PointingToDeclaration/ai/org.noelware.ai/-ai-command/-companion/index.html
+$dokka.location:org.noelware.ai/AiCommand///PointingToDeclaration/ai/org.noelware.ai/-ai-command/index.html
+$dokka.location:org.noelware.ai/AiCommand/AiCommand/#kotlin.String#kotlin.String#kotlin.String?#kotlin.Boolean/PointingToDeclaration/ai/org.noelware.ai/-ai-command/-ai-command.html
+$dokka.location:org.noelware.ai/AiCommand/addSubcommand/#org.noelware.ai.AiCommand/PointingToDeclaration/ai/org.noelware.ai/-ai-command/add-subcommand.html
+$dokka.location:org.noelware.ai/AiCommand/addSubcommands/#kotlin.Array[org.noelware.ai.AiCommand]/PointingToDeclaration/ai/org.noelware.ai/-ai-command/add-subcommands.html
+$dokka.location:org.noelware.ai/AiCommand/arg/#kotlin.String#kotlin.String#kotlin.String?#kotlin.Boolean/PointingToDeclaration/ai/org.noelware.ai/-ai-command/arg.html
+$dokka.location:org.noelware.ai/AiCommand/context/#/PointingToDeclaration/ai/org.noelware.ai/-ai-command/context.html
+$dokka.location:org.noelware.ai/AiCommand/flag/#kotlin.String#kotlin.String#kotlin.String?#kotlin.Boolean/PointingToDeclaration/ai/org.noelware.ai/-ai-command/flag.html
+$dokka.location:org.noelware.ai/AiCommand/main/#kotlin.Array[kotlin.String]/PointingToDeclaration/ai/org.noelware.ai/-ai-command/main.html
+$dokka.location:org.noelware.ai/AiCommand/main/#kotlin.collections.List[kotlin.String]/PointingToDeclaration/ai/org.noelware.ai/-ai-command/main.html
+$dokka.location:org.noelware.ai/AiCommand/run/#kotlin.collections.List[kotlin.String]/PointingToDeclaration/ai/org.noelware.ai/-ai-command/run.html
+$dokka.location:org.noelware.ai/AiCommand/setContext/#TypeParam(bounds=[org.noelware.ai.AiContext])/PointingToDeclaration/ai/org.noelware.ai/-ai-command/set-context.html
+$dokka.location:org.noelware.ai/AiContext///PointingToDeclaration/ai/org.noelware.ai/-ai-context/index.html
+$dokka.location:org.noelware.ai/AiContext/command/#/PointingToDeclaration/ai/org.noelware.ai/-ai-context/command.html
+$dokka.location:org.noelware.ai/AiPhase.FINISHED///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}ai/org.noelware.ai/-ai-phase/-f-i-n-i-s-h-e-d/index.html
+$dokka.location:org.noelware.ai/AiPhase.PRINT_USAGE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}ai/org.noelware.ai/-ai-phase/-p-r-i-n-t_-u-s-a-g-e/index.html
+$dokka.location:org.noelware.ai/AiPhase///PointingToDeclaration/ai/org.noelware.ai/-ai-phase/index.html
+$dokka.location:org.noelware.ai/DefaultAiContext///PointingToDeclaration/ai/org.noelware.ai/-default-ai-context/index.html
+$dokka.location:org.noelware.ai/DefaultAiContext/DefaultAiContext/#org.noelware.ai.AiCommand/PointingToDeclaration/ai/org.noelware.ai/-default-ai-context/-default-ai-context.html
+$dokka.location:org.noelware.ai/DefaultAiContext/command/#/PointingToDeclaration/ai/org.noelware.ai/-default-ai-context/command.html
+org.noelware.ai
+
