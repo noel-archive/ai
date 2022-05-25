@@ -23,7 +23,7 @@ name: Release a new version
 on:
   release:
     types:
-      - released
+      - prereleased
 jobs:
   snapshot-release:
     name: Release a new version
