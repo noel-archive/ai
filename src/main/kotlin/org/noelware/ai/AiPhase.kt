@@ -26,14 +26,19 @@ package org.noelware.ai
 /**
  * Represents the phase of a [command][AiCommand]'s execution.
  */
-enum class AiPhase {
+enum class AiPhase(val exitCode: Int) {
     /**
      * The command has finished.
      */
-    FINISHED,
+    FINISHED(0),
 
     /**
      * The command wants to print its usage.
      */
-    PRINT_USAGE;
+    PRINT_USAGE(130),
+
+    /**
+     * That command has exited with a failed exit code.
+     */
+    FAIL(1);
 }

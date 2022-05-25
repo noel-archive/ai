@@ -1,6 +1,10 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:org.noelware.ai////PointingToDeclaration/ai/org.noelware.ai/index.html
+$dokka.location:org.noelware.ai//bool/org.noelware.ai.AiCommand#kotlin.String/PointingToDeclaration/ai/org.noelware.ai/bool.html
+$dokka.location:org.noelware.ai//file/org.noelware.ai.AiCommand#kotlin.String#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean/PointingToDeclaration/ai/org.noelware.ai/file.html
+$dokka.location:org.noelware.ai//int/org.noelware.ai.AiCommand#kotlin.String/PointingToDeclaration/ai/org.noelware.ai/int.html
+$dokka.location:org.noelware.ai//intOrNull/org.noelware.ai.AiCommand#kotlin.String/PointingToDeclaration/ai/org.noelware.ai/int-or-null.html
 $dokka.location:org.noelware.ai//string/org.noelware.ai.AiCommand#kotlin.String/PointingToDeclaration/ai/org.noelware.ai/string.html
 $dokka.location:org.noelware.ai//stringOrNull/org.noelware.ai.AiCommand#kotlin.String/PointingToDeclaration/ai/org.noelware.ai/string-or-null.html
 $dokka.location:org.noelware.ai/AiCommand.Companion///PointingToDeclaration/ai/org.noelware.ai/-ai-command/-companion/index.html
@@ -17,9 +21,11 @@ $dokka.location:org.noelware.ai/AiCommand/run/#kotlin.collections.List[kotlin.St
 $dokka.location:org.noelware.ai/AiCommand/setContext/#TypeParam(bounds=[org.noelware.ai.AiContext])/PointingToDeclaration/ai/org.noelware.ai/-ai-command/set-context.html
 $dokka.location:org.noelware.ai/AiContext///PointingToDeclaration/ai/org.noelware.ai/-ai-context/index.html
 $dokka.location:org.noelware.ai/AiContext/command/#/PointingToDeclaration/ai/org.noelware.ai/-ai-context/command.html
+$dokka.location:org.noelware.ai/AiPhase.FAIL///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}ai/org.noelware.ai/-ai-phase/-f-a-i-l/index.html
 $dokka.location:org.noelware.ai/AiPhase.FINISHED///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}ai/org.noelware.ai/-ai-phase/-f-i-n-i-s-h-e-d/index.html
 $dokka.location:org.noelware.ai/AiPhase.PRINT_USAGE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}ai/org.noelware.ai/-ai-phase/-p-r-i-n-t_-u-s-a-g-e/index.html
 $dokka.location:org.noelware.ai/AiPhase///PointingToDeclaration/ai/org.noelware.ai/-ai-phase/index.html
+$dokka.location:org.noelware.ai/AiPhase/exitCode/#/PointingToDeclaration/ai/org.noelware.ai/-ai-phase/exit-code.html
 $dokka.location:org.noelware.ai/DefaultAiContext///PointingToDeclaration/ai/org.noelware.ai/-default-ai-context/index.html
 $dokka.location:org.noelware.ai/DefaultAiContext/DefaultAiContext/#org.noelware.ai.AiCommand/PointingToDeclaration/ai/org.noelware.ai/-default-ai-context/-default-ai-context.html
 $dokka.location:org.noelware.ai/DefaultAiContext/command/#/PointingToDeclaration/ai/org.noelware.ai/-default-ai-context/command.html

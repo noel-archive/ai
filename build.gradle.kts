@@ -56,7 +56,7 @@ plugins {
     kotlin("jvm") version "1.6.21"
 }
 
-val VERSION = Version(1, 0, 0, 0, dev.floofy.utils.gradle.ReleaseType.Beta)
+val VERSION = Version(1, 1, 0, 0, dev.floofy.utils.gradle.ReleaseType.Beta)
 val DOKKA_OUTPUT = "${rootProject.projectDir}/docs"
 val JAVA_VERSION = JavaVersion.VERSION_17
 

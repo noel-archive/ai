@@ -12,7 +12,7 @@ object ExampleCli: AiCommand("example", printUsageIfError = true) {
     }
 
     override fun run(args: List<String>): AiPhase {
-        val arg = stringOrNull("a") ?: ":D"
+        val arg by stringOrNull("a")
 
         println("hi :DDDDD (arg=$arg)")
         return AiPhase.FINISHED
