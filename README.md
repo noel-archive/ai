@@ -4,7 +4,7 @@
 > [:scroll: **Documentation**](https://ai.noelware.org)
 
 ## WHY
-**ai** (case sensitive) was built out of frustration from the Kotlin CLI parsers out there like [Clikt](https://github.com/ajalt), [kotlinx.cli](https://github.com/Kotlin/kotlinx.cli), just to name a few.
+**ai** (case-sensitive) was built out of frustration from the Kotlin CLI parsers out there like [Clikt](https://github.com/ajalt), [kotlinx.cli](https://github.com/Kotlin/kotlinx.cli), just to name a few.
 
 With **Clikt**, I really had a hard time to build a proper CLI tool without running into errors when mixing flags and arguments and much more and I don't like the design for **kotlinx-cli**, while be minimal, just not for us.
 
